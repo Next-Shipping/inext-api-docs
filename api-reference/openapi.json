@@ -10,7 +10,7 @@
   },
   "servers": [
     {
-      "url": "https://inext-api-a68919f4c5a9.herokuapp.com"
+      "url": "https://inext-api.nextshipping.com.br/"
     }
   ],
   "security": [
@@ -25,9 +25,10 @@
         "description": "Retornar o processo por referência",
         "parameters": [
           {
+            "required": true,
             "name": "ref",
             "in": "query",
-            "description": "Referência do processo - Ex.: REF. ALPHA TOOLS x ZETA 4800005678 - ZETA0021.II",
+            "description": "Referência do processo. Exemplo: XPTO000001, REF. XPTO000001, QWE989.PL, etc.",
             "schema": {
               "type": "string"
             }

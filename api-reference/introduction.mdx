@@ -1,7 +1,28 @@
 ---
-title: "Introdução"
+title: "Introdução à API"
 description: "Como acessar"
 ---
+
+A API da Next Shipping oferece um conjunto de recursos REST para integração direta com nossos serviços de agenciamento de carga, permitindo automação completa do ciclo de transporte e acompanhamento de processos logísticos. Com ela, você pode:
+
+- Consultar e gerenciar processos de importação e exportação
+- Receber informações atualizadas sobre status de embarque e documentações
+- Integrar sistemas internos sem necessidade de interfaces manuais
+
+Os principais benefícios incluem:
+
+- Segurança: autenticação via cabeçalhos x-client-id e x-client-token
+- Consistência: modelo uniforme de requisição e resposta em JSON
+- Escalabilidade: endpoints otimizados para alto volume de chamadas
+
+Nesta seção, você encontrará:
+
+- Visão geral dos recursos organizados por grupos (por exemplo, `client-api`)
+- Detalhamento de cada endpoint: método HTTP, URL, parâmetros obrigatórios e exemplos de uso
+- Códigos de resposta e tratamento de erros
+- Exemplos práticos em cURL e nas principais bibliotecas de mercado
+
+Com essas informações em mãos, você poderá integrar sua aplicação ao nosso sistema de forma rápida e confiável.
 
 ## Autenticação
 
@@ -12,4 +33,4 @@ Para consultar os nossos endpoints, é necessário enviar nas requisições as s
 | `x-client-id`    | ID do cliente, fornecido quando o acesso à API é solicitado    |
 | `x-client-token` | Token do cliente, fornecido quando o acesso à API é solicitado |
 
-A URL base da aplicação é `https://inext-api-a68919f4c5a9.herokuapp.com`
+A URL base da aplicação é `https://inext-api.nextshipping.com.br/`
