@@ -1,0 +1,122 @@
+{
+  "processNumber": "NEXTIM048052",
+  "clientReference": "ZYHAD x JARTEC 240827706 - JAR0370.II -  JARTEC 240827706",
+  "origin": "NINGBO",
+  "destination": "ITAJAI",
+  "estimatedCargoLoad": "2024-10-01T00:00:00.000Z",
+  "cargoLoad": "2024-09-30T00:00:00.000Z",
+  "estimatedCargoUnload": "2024-11-05T00:00:00.000Z",
+  "transportCompany": "Ningbo Zhongyi Hydraulic Motor Co., Ltd",
+  "cargoType": "LCL",
+  "hbls": [
+    {
+      "hblNumber": "WLL40900346",
+      "items": [
+        {
+          "identification": "OERU4206067",
+          "seal": "OOLJGU8503",
+          "packageType": "PALLETS",
+          "quantity": 2,
+          "grossWeight": 831
+        }
+      ]
+    }
+  ],
+  "followUps": [
+    {
+      "title": "2024-11-05T08:33:00",
+      "description": "Confirmamos a atracação no dia 04/11 do navio KOTA PURI no porto de ITAJAI.\r\n\r\nPara a liberação do SISCARGA:\r\n\r\nLiberação ONLINE de maneira digital:\r\n\r\n- Uma foto do HBL Original em mãos conforme procedimento anexo.\r\n- Comprovante de pagamento (caso não tenha sido previamente enviado ao nosso departamento financeiro).\r\n\r\nLiberação PRESENCIAL no escritório da Next Shipping:\r\n\r\n- Uma via do HBL Original (a ser retido na Next).\r\n- Uma cópia do HBL original para protocolo.\r\n- Comprovante de pagamento (caso não tenha sido previamente enviado ao nosso departamento financeiro).\r\n\r\nEm casos de dúvidas para a liberação do SISCARGA e envio online da documentação acima citada, gentileza contatar: liberacao@nextshipping.com.br\r\n    \r\nO horário de liberação em nossos escritórios é das 9:00h até 11:00h e 14:00h até 17:00h.\r\n\r\nPara receber a taxa de câmbio atualizada para pagamento gentileza contatar: faturamento@nextshipping.com.br \r\n\r\nConforme novo procedimento de alguns armadores, pedimos a gentileza de agendar a devolução dos equipamentos vazios com no mínimo de 48 horas de antecedência, a fim de evitar problemas com falta de janelas de recebimento junto aos terminais de devolução.\r\n\r\nAgradecemos a confiança em nossos serviços e permanecemos a disposição.",
+      "date": "2024-11-05T08:33:00.000Z"
+    },
+    {
+      "title": "2024-11-04T08:41:00",
+      "description": "Informamos que nossa mercadoria tem previsão de chegada em ITAJAI no dia 05/11. Continuaremos monitorando e mediante atualizações, informaremos.",
+      "date": "2024-11-04T08:41:00.000Z"
+    },
+    {
+      "title": "2024-10-30T16:51:00",
+      "description": "Informamos que nossa mercadoria tem previsão de chegada em ITAJAI no dia 02/11. Continuaremos monitorando e mediante atualizações, informaremos.",
+      "date": "2024-10-30T16:51:00.000Z"
+    },
+    {
+      "title": "2024-10-28T15:08:00",
+      "description": "Segue anexo as telas do CE Mercante para vossa ciência.\r\nPedimos a gentileza de verificar as informações apresentadas dentro das próximas 24 horas e nos retornar caso tenha dúvida ou identifique qualquer inconsistência.\r\nApós este prazo, estaremos sujeitos a multa e bloqueio do CE mediante alterações.",
+      "date": "2024-10-28T15:08:00.000Z"
+    },
+    {
+      "title": "2024-10-28T14:49:00",
+      "description": "A fim de que seja agilizado toda operação de transferencia e desova da mercadoria solicitamos o envio da documentação abaixo:\r\n\r\n- INVOICE (contendo o valor total da mercadoria)\r\n- PACKING LIST (contendo o valor total de volumes e peso)\r\n- Informar Razão Social e CNPJ do despachante\r\n\r\n**Importante lembrar que: A falta de qualquer documento acima citado impossibilitará na transferência e posterior desova do CNTR, gerando custos de armazenagem, transferência e demurrage, que consequentemente serão repassados ao importador.",
+      "date": "2024-10-28T14:49:00.000Z"
+    },
+    {
+      "title": "2024-10-22T17:44:00",
+      "description": "Informamos que nossa mercadoria tem previsão de chegada em ITAJAI no dia 02/11. Continuaremos monitorando e mediante atualizações, informaremos.",
+      "date": "2024-10-22T17:44:00.000Z"
+    },
+    {
+      "title": "2024-10-22T17:16:00",
+      "description": "Recebemos a informação do armador que o navio KOTA PURI omitirá o porto de Navegantes. As cargas permanecerão a bordo e descarregarão no porto de Itajaí, previsto para o dia 02/11. Seguimos acompanhando e mediante novidades, avisaremos. ",
+      "date": "2024-10-22T17:16:00.000Z"
+    },
+    {
+      "title": "2024-10-15T12:10:00",
+      "description": "Informamos que nossa mercadoria tem previsão de chegada em NAVEGANTES no dia 05/11. Continuaremos monitorando e mediante atualizações, informaremos.",
+      "date": "2024-10-15T12:10:00.000Z"
+    },
+    {
+      "title": "2024-10-14T15:33:00",
+      "description": "Segue anexo cópia do HBL final.\r\n\r\nAbaixo segue destinação dos documentos finais:\r\n-> BL original: Exportador\r\n-> Invoice: Exportador\r\n-> Packing List: Exportador",
+      "date": "2024-10-14T15:33:00.000Z"
+    },
+    {
+      "title": "2024-10-08T16:01:00",
+      "description": "Informamos que nossa mercadoria tem previsão de chegada em NAVEGANTES no dia 02/11. Continuaremos monitorando e mediante atualizações, informaremos.",
+      "date": "2024-10-08T16:01:00.000Z"
+    },
+    {
+      "title": "2024-10-07T16:06:00",
+      "description": "Gostaríamos de informar que, a partir do dia 06/10, as operações do nosso parceiro consolidador em Itajaí/Navegantes irão migrar do Terminal Forte para o Terminal Barra do Rio (Bandeirantes). Todas as cargas que chegarem a partir desta data já serão direcionadas diretamente para o novo terminal.\r\n\r\nPara a negociação dos valores, pedimos que nos enviem a tabela atual do Terminal Forte, para que o novo terminal possa fazer o espelhamento e aplicar os mesmos valores, garantindo a consistência das condições comerciais. Além disso, encaminhamos em anexo o Manual para cadastro no novo terminal. \r\n\r\nÉ importante destacar que essa mudança é uma decisão da agência consolidadora, com o objetivo de buscar maior eficácia logística na operação. Embora essa ação seja independente de nossa empresa, ela visa melhorar o processo como um todo, mantendo a qualidade do serviço prestado. Reforçamos que todos os valores serão espelhados conforme os parâmetros já estabelecidos.\r\n\r\nAgradecemos a compreensão e estamos à disposição para esclarecer qualquer dúvida.",
+      "date": "2024-10-07T16:06:00.000Z"
+    },
+    {
+      "title": "2024-10-01T11:17:00",
+      "description": "Confirmamos o embarque de nossa mercadoria no navio KOTA PURI no dia 30/09 no porto de NINGBO e com previsão de chegada no dia 02/11 no porto de NAVEGANTES.\r\n\r\n",
+      "date": "2024-10-01T11:17:00.000Z"
+    },
+    {
+      "title": "2024-09-30T09:21:00",
+      "description": "O navio KOTA PURI se encontra na região do porto de Ningbo e teve sua previsão de saída atualizada para o dia 01/10. Seguimos acompanhando e mediante atualizações, avisaremos.",
+      "date": "2024-09-30T09:21:00.000Z"
+    },
+    {
+      "title": "2024-09-23T16:47:00",
+      "description": "Em razão do congestionamento portuário, o navio KOTA PURI teve sua previsão de saída do porto de Ningbo atualizada para o dia 30/09. Seguimos acompanhando e mediante atualizações, avisaremos.",
+      "date": "2024-09-23T16:47:00.000Z"
+    },
+    {
+      "title": "2024-09-16T10:16:00",
+      "description": "Devido à falta de espaço, nossa mercadoria foi remanejada para a próxima saída disponível em 22/09. Em anexo, segue o comunicado do armador sobre a rolagem. Estamos pressionando o armador para garantir que não ocorram novas rolagens e que as novas datas sejam cumpridas",
+      "date": "2024-09-16T10:16:00.000Z"
+    },
+    {
+      "title": "2024-09-03T14:24:00",
+      "description": "Reserva de embarque confirmada conforme dados abaixo: \r\n\r\nNavio: TBN \r\nViagem: TBN\r\nETD NINGBO: 08/09\r\nETA NAVEGANTES: 13/10\r\n\r\nSegue em anexo HBL para conferência, gentileza verificar e nos retornar caso necessite de alguma alteração. Caso não seja recebida nenhuma solicitação de correção em até 24h será considerado esse HBL em anexo para a emissão dos originais e correções posteriores estarão sujeitas a custos e penalidades de acordo com as legislações vigentes.",
+      "date": "2024-09-03T14:24:00.000Z"
+    },
+    {
+      "title": "2024-09-03T14:21:00",
+      "description": "De acordo com informações do exportador, poderemos proceder com a coleta da mercadoria para o dia 04/09/2024. Tão logo tenhamos a confirmação de coleta e dados de booking, reverteremos.",
+      "date": "2024-09-03T14:21:00.000Z"
+    },
+    {
+      "title": "2024-08-30T08:42:00",
+      "description": "Estamos aguardando o envio do booking order pelo exportador para prosseguir com a solicitação da reserva. Assim que recebermos, reverteremos. ",
+      "date": "2024-08-30T08:42:00.000Z"
+    },
+    {
+      "title": "2024-08-29T17:53:00",
+      "description": "Agradecemos a instrução de embarque e já notificamos nosso agente na origem de acordo.\r\nUtilizaremos os dados abaixo para a confecção do HBL, caso queira efetuar algum ajuste, favor informar:\r\n\r\n Exportador: \r\nNingbo Zhongyi Hydraulic Motor Co., Ltd\r\nNo.88 Zhongyi Rd Zhenhai Ningbo China,  - \r\nNingbo - CN - CHINA\r\nCNPJ: \r\n\r\n Importador: \r\nJARTEC AUTOMAÇÃO INDUSTRIAL\r\nJOAO PLANINSCHENK, 1040 - \r\nJaraguá do Sul - SC - BRASIL\r\nCNPJ: 95.841.961/0001-35\r\n\r\n Notify:\r\nJARTEC AUTOMAÇÃO INDUSTRIAL\r\nJOAO PLANINSCHENK, 1040 - \r\nJaraguá do Sul - SC - BRASIL\r\nCNPJ: 95.841.961/0001-35\r\n\r\nTão logo tenhamos maiores informações, retornaremos.",
+      "date": "2024-08-29T17:53:00.000Z"
+    }
+  ]
+}

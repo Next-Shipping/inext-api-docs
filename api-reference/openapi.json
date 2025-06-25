@@ -10,207 +10,214 @@
   },
   "servers": [
     {
-      "url": "http://sandbox.mintlify.com"
+      "url": "https://inext-api-a68919f4c5a9.herokuapp.com"
     }
   ],
   "security": [
     {
-      "bearerAuth": []
+      "x-client-id": [],
+      "x-client-token": []
     }
   ],
   "paths": {
-    "/plants": {
+    "/client-api/process": {
       "get": {
-        "description": "Returns all plants from the system that the user has access to",
+        "description": "Retornar o processo por referência",
         "parameters": [
           {
-            "name": "limit",
+            "name": "ref",
             "in": "query",
-            "description": "The maximum number of results to return",
+            "description": "Referência do processo - Ex.: REF. ALPHA TOOLS x ZETA 4800005678 - ZETA0021.II",
             "schema": {
-              "type": "integer",
-              "format": "int32"
+              "type": "string"
             }
           }
         ],
         "responses": {
           "200": {
-            "description": "Plant response",
+            "description": "Retorno do GET 200",
             "content": {
               "application/json": {
                 "schema": {
+                  "$ref": "#/components/schemas/Process"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Retorno do GET 404",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error404"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Retorno do GET 401",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error401"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "webhooks": {},
+  "components": {
+    "schemas": {
+      "Process": {
+        "type": "object",
+        "properties": {
+          "processNumber": {
+            "type": "string",
+            "description": "Número do processo"
+          },
+          "clientReference": {
+            "type": "string",
+            "description": "Referência do cliente"
+          },
+          "origin": {
+            "type": "string",
+            "description": "Origem"
+          },
+          "destination": {
+            "type": "string",
+            "description": "Destino"
+          },
+          "estimatedCargoLoad": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Previsão de embarque da carga"
+          },
+          "cargoLoad": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Data real de embarque da carga"
+          },
+          "estimatedCargoUnload": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Previsão de desembarque da carga"
+          },
+          "transportCompany": {
+            "type": "string",
+            "description": "Transportadora"
+          },
+          "cargoType": {
+            "type": "string",
+            "description": "Tipo de carga",
+            "enum": ["FCL", "LCL"]
+          },
+          "hbls": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "hblNumber": {
+                  "type": "string",
+                  "description": "Número do HBL"
+                },
+                "items": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Plant"
+                    "type": "object",
+                    "properties": {
+                      "identification": {
+                        "type": "string"
+                      },
+                      "seal": {
+                        "type": "string"
+                      },
+                      "packageType": {
+                        "type": "string"
+                      },
+                      "quantity": {
+                        "type": "integer"
+                      },
+                      "grossWeight": {
+                        "type": "number",
+                        "format": "float",
+                        "description": "Peso bruto em kg"
+                      }
+                    }
                   }
                 }
               }
             }
           },
-          "400": {
-            "description": "Unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
+          "followUps": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "date": {
+                  "type": "string",
+                  "format": "date-time"
                 }
               }
             }
           }
         }
       },
-      "post": {
-        "description": "Creates a new plant in the store",
-        "requestBody": {
-          "description": "Plant to add to the store",
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewPlant"
-              }
-            }
-          },
-          "required": true
-        },
-        "responses": {
-          "200": {
-            "description": "plant response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Plant"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/plants/{id}": {
-      "delete": {
-        "description": "Deletes a single plant based on the ID supplied",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "ID of plant to delete",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int64"
-            }
-          }
-        ],
-        "responses": {
-          "204": {
-            "description": "Plant deleted",
-            "content": {}
-          },
-          "400": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  },
-  "webhooks": {
-    "/plant/webhook": {
-      "post": {
-        "description": "Information about a new plant added to the store",
-        "requestBody": {
-          "description": "Plant added to the store",
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewPlant"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "Return a 200 status to indicate that the data was received successfully"
-          }
-        }
-      }
-    }
-  },
-  "components": {
-    "schemas": {
-      "Plant": {
-        "required": [
-          "name"
-        ],
-        "type": "object",
-        "properties": {
-          "name": {
-            "description": "The name of the plant",
-            "type": "string"
-          },
-          "tag": {
-            "description": "Tag to specify the type",
-            "type": "string"
-          }
-        }
-      },
-      "NewPlant": {
-        "allOf": [
-          {
-            "$ref": "#/components/schemas/Plant"
-          },
-          {
-            "required": [
-              "id"
-            ],
-            "type": "object",
-            "properties": {
-              "id": {
-                "description": "Identification number of the plant",
-                "type": "integer",
-                "format": "int64"
-              }
-            }
-          }
-        ]
-      },
-      "Error": {
-        "required": [
-          "error",
-          "message"
-        ],
+
+      "Error404": {
         "type": "object",
         "properties": {
           "error": {
-            "type": "integer",
-            "format": "int32"
+            "type": "string",
+            "description": "Not Found"
           },
           "message": {
-            "type": "string"
+            "type": "string",
+            "description": "Process not found"
+          },
+          "statusCode": {
+            "type": "integer",
+            "description": "404"
+          }
+        }
+      },
+      "Error401": {
+        "type": "object",
+        "properties": {
+          "error": {
+            "type": "string",
+            "description": "Unauthorized"
+          },
+          "message": {
+            "type": "string",
+            "description": "Client credentials error",
+            "enum": ["Missing client credentials", "Invalid client credentials"]
+          },
+          "statusCode": {
+            "type": "integer",
+            "description": "401"
           }
         }
       }
     },
     "securitySchemes": {
-      "bearerAuth": {
-        "type": "http",
-        "scheme": "bearer"
+      "x-client-id": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "x-client-id"
+      },
+      "x-client-token": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "x-client-token"
       }
     }
   }
